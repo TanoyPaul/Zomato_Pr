@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f9fafc;
+
+}
+
+.navbar {
+    display: flex; 
+    /* We use display flex to the parent always ; */
+    justify-content: space-around;
+    background-color: #fff;
+
+}
+
+.navbar_brand {
+    width: 100px;
+}
+
+.navbar_logo {
+    width: 100%;
+}
+
+
+
+.nav_item {
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius:8px ;
+    
+}
+
+.nav_item:hover {
+    border: 2px solid #FF6767;
+    cursor: pointer;
+}
+
+@media (min-width : 768px){
+    .navbar {
+        justify-content: space-between;
+        padding : 20px 30px;
+    }
+    
+}
+
+@media (min-width : 1024px) {
+    .navbar_brand {
+        width: 140px;
+    }
+    .nav_item {
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 500px;
+    }
+}
